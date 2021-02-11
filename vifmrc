@@ -492,5 +492,5 @@ nnoremap <a-d> :!tilix -a session-add-down -x nvim %f<cr>
 nnoremap <a-r> :!tilix -a session-add-right -x nvim %f<cr>
 nnoremap <c-d> :!tilix -a session-add-down &<cr>
 nnoremap <c-r> :!tilix -a session-add-right &<cr>
-nnoremap ,n :!tilix --new-process &<cr>
-nnoremap ,N :!tilix -a app-new-session &<cr>
+nnoremap nn :!tilix --new-process &<cr>
+nnoremap nN :!tilix -a app-new-session &<cr>
