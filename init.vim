@@ -58,7 +58,7 @@ nnoremap <silent> aj :TermDown<cr>
 nnoremap <silent> al :TermRight<cr>
 " -- split terminal con tilix y vifm --
 nnoremap <silent> ff :Vifm<cr>
-"nnoremap  :VsplitVim
-"nnoremap  :SplitVim
-"nnoremap  :DiffVim
+nnoremap <silent> fl :VsplitVifm<cr>
+nnoremap <silent> fj :SplitVifm<cr>
+nnoremap <silent> fd :DiffVifm<cr>
 "nnoremap  :TabVim
