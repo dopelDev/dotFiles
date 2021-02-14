@@ -6,8 +6,14 @@ set shiftwidth=2
 set tabstop=2
 set autoindent
 set smartindent
-imap ii <esc>
+imap ii <ESC>
 imap ññ <Right>
+"------------------Nuevos keybinds---------------------
+"------------ahora sabiendo un poco---------feb13------
+"-------------------para cerrar-------------------------
+nnoremap qq :q<cr>
+nnoremap qa :qall<cr>
+nnoremap qc <c-w>c<cr>
 "------------------ plugins ----------------------------
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -58,7 +64,7 @@ nnoremap <silent> aj :TermDown<cr>
 nnoremap <silent> al :TermRight<cr>
 " -- split terminal con tilix y vifm --
 nnoremap <silent> ff :Vifm<cr>
-nnoremap <silent> fl :VsplitVifm<cr>
-nnoremap <silent> fj :SplitVifm<cr>
+nnoremap fl :VsplitVifm<cr>
+nnoremap fj :SplitVifm<cr>
 nnoremap <silent> fd :DiffVifm<cr>
 "nnoremap  :TabVim
