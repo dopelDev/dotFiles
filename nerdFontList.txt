@@ -1,17 +1,10 @@
-Agave.zip
-CascadiaCode.zip
+CascadiaCode.zip CaskayduaCove
 #DaddyTimeMono.zip
-Gohu.zip
-HeavyData.zip
-#Hermit.zip
-iA-Writer.zip
-InconsolataGo.zip
+#Hermit.zip Hurmit
+$iA-Writer.zip
 ~Inconsolata.zip
-Iosevka.zip
 ~Monofur.zip
 #Mononoki.zip
-OpenDyslexic.zip
-ShareTechMono.zip
 ~SpaceMono.zip
-Terminus.zip
-UbuntuMono.zip
+#Terminus.zip Terminess
+FreeMono
