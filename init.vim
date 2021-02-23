@@ -13,7 +13,33 @@ imap ññ <Right>
 "-------------------para cerrar-------------------------
 nnoremap qq :q<cr>
 nnoremap qa :qall<cr>
-nnoremap qc <c-w>c<cr>
+" lo mismo que qq
+"nnoremap qc <c-w>c<cr>
+"------------ keybinds all windows ---------feb22-------
+"    -- windo --
+nnoremap ad :windo :diffthis<cr>
+nnoremap aq :windo :q!<cr>
+nnoremap aw :windo :wq<cr>
+"   -- new windows con terminal --
+"nnoremap :new +term
+"nnoremap :vnew +term
+"----------  write  -------------------- feb 22 -------
+nnoremap ww :w<cr>
+nnoremap wa :wall<cr>
+"----------------- Tabs keybinds ---------feb 22--------
+nnoremap tn :tabnew<cr>
+nnoremap tq :tabo<cr>
+nnoremap ts :tab split<cr>
+"---------- tilix ----------------------- feb 22 -------
+" -- split terminal con tilix --
+command-complete=shellcmd TermRight :!tilix -a session-add-right -w %:p:h &
+command-complete=shellcmd TermDown :!tilix -a session-add-down -w %:p:h &
+nnoremap <silent> xj :TermDown<cr>
+nnoremap <silent> xl :TermRight<cr>
+"  -- new tab con tilix y new window con tilix --
+nnoremap xn :!tilix -a app-new-window -w %:p:h<cr>
+"dont work
+"nnoremap xN :!tilix -a add-new-session -w %:p:h<cr>
 "------------------ plugins ----------------------------
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -57,14 +83,9 @@ nnoremap dl :vertical resize +5<cr>
 nnoremap dh :resize -5<cr>
 nnoremap dj :resize +5<cr>
 nnoremap dk :vertical resize -5<cr>
-" -- split terminal con tilix --
-command! TermRight :!tilix -a session-add-right -w %:p:h &
-command! TermDown :!tilix -a session-add-down -w %:p:h &
-nnoremap <silent> aj :TermDown<cr>
-nnoremap <silent> al :TermRight<cr>
 " -- split terminal con tilix y vifm --
 nnoremap <silent> ff :Vifm<cr>
 nnoremap fl :VsplitVifm<cr>
 nnoremap fj :SplitVifm<cr>
 nnoremap <silent> fd :DiffVifm<cr>
-"nnoremap  :TabVim
+
