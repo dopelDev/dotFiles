@@ -46,24 +46,12 @@ nnoremap xn :!tilix -a app-new-window -w %:p:h<cr>
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
-" nerdtree!!
-" Plug 'preservim/nerdtree'
-" airLine
-Plug 'vim-airline/vim-airline'
-" airLine Themes
-Plug 'vim-airline/vim-airline-themes'
-" intento de vifm 
-Plug 'vifm/vifm.vim'
+"-----------------call plugins----------------------
+source /home/dopel/.config/nvim/callPlugins.vim
 call plug#end()
 "------- recomendado por el instador de plugins --------
 filetype plugin indent on 
 syntax enable
-"--------------configuracion de nerdtree----------------
-"---------------shortcuts para nerdtree-----------------
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <silent> <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
 "------------ configuracion de splits ------------------
 " -- splits vs vertical split sp split--
 nnoremap sl :vs<cr>
@@ -88,4 +76,6 @@ nnoremap <silent> ff :Vifm<cr>
 nnoremap fl :VsplitVifm<cr>
 nnoremap fj :SplitVifm<cr>
 nnoremap <silent> fd :DiffVifm<cr>
-
+"--------------------- mis scripts --------------------
+"             -- abbreviation --
+source /home/dopel/.config/nvim/abbreviation 
