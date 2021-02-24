@@ -29,3 +29,8 @@ fi
 export PATH="$HOME/scripts/:$PATH"
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Autorun Tmux
+if [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
