@@ -5,4 +5,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " intento de vifm 
 Plug 'vifm/vifm.vim'
+" tmuxline
+Plug 'edkolev/tmuxline.vim'
+" Fugitive or fugitiveline
+Plug 'tpope/vim-fugitive'
+" Coiled Snake : Python Folding for Vim
+Plug 'kalekundert/vim-coiled-snake'
+Plug 'Konfekt/FastFold'
 

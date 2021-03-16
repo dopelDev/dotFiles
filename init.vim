@@ -79,3 +79,11 @@ nnoremap <silent> fd :DiffVifm<cr>
 "--------------------- mis scripts --------------------
 "             -- abbreviation --
 source /home/dopel/.config/nvim/abbreviation 
+"--------------------- airline extend -----------------
+let g:airline_theme="bubblegum"
+let g:airline_extensions = ['quickfix', 'wordcount', 'term', 'branch', 'fugitiveline']
+function! AirlineInit()
+	let g:airline_section_b = airline#section#create(['branch'])
+endfunction
+autocmd User AirlineAfterInit call AirlineInit()
+"let g:airline_section_b %{airline#util#wrap(branch(),0)}
