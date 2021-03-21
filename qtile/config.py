@@ -32,7 +32,7 @@ from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
 mod = "mod4"
-terminal = "tilix" 
+terminal = "alacritty" 
 #terminal = guess_terminal()
 
 # mi autorun
@@ -93,42 +93,42 @@ keys = [
     Key([mod], "d", lazy.spawn("rofi -show run")),
 ]
 
-groups = [Group(i) for i in "123456789"]
+group_names = [("MAIN", {'layout': 'monadtall'}),
+               ("DEV", {'layout': 'monadtall'}),
+               ("DEVOPT", {'layout': 'monadtall'}),
+               ("DOC", {'layout': 'treetab'}),
+               ("DOCOPT", {'layout': 'treetab'}),
+               ("MEDIA", {'layout': 'matrix'}),
+               ("MISC", {'layout': 'matrix'}),
+               ("OFF", {'layout': 'monadwide'}),
+               ("OFFY", {'layout': 'monadwide'})]
 
-for i in groups:
-    keys.extend([
-        # mod1 + letter of group = switch to group
-        Key([mod], i.name, lazy.group[i.name].toscreen(),
-            desc="Switch to group {}".format(i.name)),
+groups = [Group(name, **kwargs) for name, kwargs in group_names]
 
-        # mod1 + shift + letter of group = switch to & move focused window to group
-        Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
-            desc="Switch to & move focused window to group {}".format(i.name)),
-        # Or, use below if you prefer not to switch to that group.
-        # # mod1 + shift + letter of group = move focused window to group
-        # Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-        #     desc="move focused window to group {}".format(i.name)),
-    ])
+for i, (name, kwargs) in enumerate(group_names, 1):
+    keys.append(Key([mod], str(i), lazy.group[name].toscreen()))        # Switch to another group
+    keys.append(Key([mod, "shift"], str(i), lazy.window.togroup(name))) # Send current window to another group
+
 
 layouts = [
-    layout.Columns(border_focus_stack='#d75f5f'),
-    layout.Max(),
+    # layout.Columns(border_focus_stack='#d75f5f'),
+    # layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
-    # layout.Matrix(),
-    # layout.MonadTall(),
-    # layout.MonadWide(),
+    layout.Matrix(),
+    layout.MonadTall(),
+    layout.MonadWide(),
     # layout.RatioTile(),
     # layout.Tile(),
-    # layout.TreeTab(),
+    layout.TreeTab(),
     # layout.VerticalTile(),
     # layout.Zoomy(),
 ]
 
 widget_defaults = dict(
     font='DaddyTimeMono Nerd Font',
-    fontsize=12,
+    fontsize=14,
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
@@ -169,7 +169,6 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                widget.TextBox("default config", name="default"),
                 widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 widget.Systray(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
@@ -192,7 +191,6 @@ screens = [
                     name_transform=lambda name: name.upper(),
                 ),
                 widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 widget.Systray(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
                 widget.QuickExit(),
