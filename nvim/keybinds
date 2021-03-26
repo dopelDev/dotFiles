@@ -1,0 +1,44 @@
+"------------------Nuevos keybinds---------------------
+"------------ahora sabiendo un poco---------feb13------
+"-------------------para cerrar-------------------------
+imap ii <ESC>
+imap ññ <Right>
+nnoremap qq :q<cr>
+nnoremap qa :qall<cr>
+" lo mismo que qq
+"nnoremap qc <c-w>c<cr>
+"------------ keybinds all windows ---------feb22-------
+"    -- windo --
+nnoremap ad :windo :diffthis<cr>
+nnoremap aq :windo :q!<cr>
+nnoremap aw :windo :wq<cr>
+"   -- new windows con terminal --
+"nnoremap :new +term
+"nnoremap :vnew +term
+"----------  write  -------------------- feb 22 -------
+nnoremap ww :w<cr>
+nnoremap wa :wall<cr>
+"----------------- Tabs keybinds ---------feb 22--------
+nnoremap tn :tabnew<cr>
+nnoremap tq :tabo<cr>
+nnoremap ts :tabsplit<cr>
+"------------ configuracion de splits ------------------
+" -- splits vs vertical split sp split--
+nnoremap sl :vs<cr>
+nnoremap sj :sp<cr>
+" --	movimiento entre ventanas --
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+" --	mover ventana para la derecha y para abajo --
+nnoremap <c-Left> <c-w>H
+nnoremap <c-Down> <c-w>J
+nnoremap <c-Up> <c-w>K
+nnoremap <c-Right> <c-w>L
+" -- cambiar el tamaño de las ventanas --
+nnoremap dl :vertical resize +5<cr>
+nnoremap dh :resize -5<cr>
+nnoremap dj :resize +5<cr>
+nnoremap dk :vertical resize -5<cr>
+
