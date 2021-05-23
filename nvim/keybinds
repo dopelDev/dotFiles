@@ -22,7 +22,7 @@ nnoremap wa :wall<cr>
 nnoremap tn :tabnew<cr>
 nnoremap tq :tabo<cr>
 nnoremap ts :tabsplit<cr>
-"------------ configuracion de splits ------------------
+"------------ CONFIGURACION DE SPLITS ------------------
 " -- splits vs vertical split sp split--
 nnoremap sl :vs<cr>
 nnoremap sj :sp<cr>
@@ -37,8 +37,14 @@ nnoremap <c-Down> <c-w>J
 nnoremap <c-Up> <c-w>K
 nnoremap <c-Right> <c-w>L
 " -- cambiar el tamaño de las ventanas --
-nnoremap dl :vertical resize +5<cr>
-nnoremap dh :resize -5<cr>
-nnoremap dj :resize +5<cr>
-nnoremap dk :vertical resize -5<cr>
-
+nnoremap gl :vertical resize +5<cr>
+nnoremap gh :resize -5<cr>
+nnoremap gj :resize +5<cr>
+nnoremap gk :vertical resize -5<cr>
+"--------------- CONFIGURACION DE VIFM -------------------
+nnoremap <silent> ff :Vifm<cr>
+nnoremap fl :VsplitVifm<cr>
+nnoremap fj :SplitVifm<cr>
+nnoremap <silent> fd :DiffVifm<cr>
+"-----------------CONFIGURACION DE NERDTREE-----------------
+nnoremap <C-t> :NERDTreeToggle<CR>
