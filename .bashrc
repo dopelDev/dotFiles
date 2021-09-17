@@ -122,6 +122,26 @@ if [ -f ~/.bashhub/bashhub.sh ]; then
     source ~/.bashhub/bashhub.sh
 fi
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+export PATH="$HOME/scripts/:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# run powerline-shell
+if [[ -x $HOME/.local/bin/powerline-shell ]]; then
+	function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+fi
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
