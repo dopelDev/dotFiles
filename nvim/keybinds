@@ -1,12 +1,14 @@
 "------------------Nuevos keybinds---------------------
 "------------ahora sabiendo un poco---------feb13------
 "-------------------para cerrar-------------------------
+"
 imap ii <ESC>
 imap ññ <Right>
 nnoremap qq :q<cr>
 nnoremap qa :qall<cr>
 " lo mismo que qq
 "nnoremap qc <c-w>c<cr>
+"
 "------------ keybinds all windows ---------feb22-------
 "    -- windo --
 nnoremap ad :windo :diffthis<cr>
@@ -41,10 +43,17 @@ nnoremap gl :vertical resize +5<cr>
 nnoremap gh :resize -5<cr>
 nnoremap gj :resize +5<cr>
 nnoremap gk :vertical resize -5<cr>
+"
 "--------------- CONFIGURACION DE VIFM -------------------
 nnoremap <silent> ff :Vifm<cr>
 nnoremap fl :VsplitVifm<cr>
 nnoremap fj :SplitVifm<cr>
 nnoremap <silent> fd :DiffVifm<cr>
+"
 "-----------------CONFIGURACION DE NERDTREE-----------------
 nnoremap <C-t> :NERDTreeToggle<CR>
+"
+"-------- move in buffer --------
+nnoremap bp :bprevious<cr>
+nnoremap bn :bnext<cr>
+

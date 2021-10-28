@@ -16,4 +16,5 @@ Plug 'Konfekt/FastFold'
 Plug 'preservim/nerdtree'
 " vim-visual-multi
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-
+" Coc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
