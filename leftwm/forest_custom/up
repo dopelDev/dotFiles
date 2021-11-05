@@ -41,3 +41,8 @@ do
   monitor=$monitor polybar -c config.ini main &> /dev/null &
 done
 
+# my config xranr
+xrandr --output DP-3 --left-of DP-1 --output DP-1 --left-of HDMI-0;
+fcitx5 -d &> /dev/null &
+leftwm-command Reload &
+
