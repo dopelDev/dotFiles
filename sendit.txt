@@ -1,0 +1,20 @@
+I am a software developer.
+Studies in software engineering at UPC and UTP university Peru.
+I have completed projects such as web data visualization, API creation and automation; Both in local and cloud environment and google cloud services
+Likewise, specialized in Scrape Web and Data Analysis.
+In addition, of a sufficient experience in Linux environments with use of OpenSource tools
+
+Expert in:
+1. WebScrape / ETL : scrapy, BeautifulSoup, selenium
+2. Data Analysis / Data Manage: (pandas, numpy, scipy, jupyter-notebook
+3 Data Visualization: matplotlib, hvplot suite (with javascript Chart.JS)
+3. Design and deploy for backend and APIs (google cloud, AWS ): Flask, JWT, Flask-RestFul
+4. GNU-Linux Environments / OpenSource : tools SSH, Docker , scheme cron, bash script
+
+Intermediate use of English, easy to understand in English, Spanish, Portuguese
+
+Projects:
+https://github.com/dopelDev/femi // Data Visualization
+https://github.com/dopelDev/sniper // Web Scrapping
+https://github.com/dopelDev/humbleBundle // Web Scrapping
+https://github.com/dopelDev/sunat-exchange // APIs deployment
