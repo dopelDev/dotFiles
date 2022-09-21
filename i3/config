@@ -41,7 +41,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec /home/dopel/.cargo/bin/alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -151,6 +151,31 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+
+# workspace custom
+set $ws11 "social"
+set $ws12 "media"
+set $ws13 "docMedia"
+set $ws14 "doc"
+set $ws15 "webDoc"
+set $ws16 "6"
+set $ws17 "spam"
+set $ws18 "8"  
+set $ws19 "calendar"
+set $ws20 "translate"
+
+# switch to workspace custom
+bindsym Control+Mod1+1 workspace $ws11
+bindsym Control+Mod1+2 workspace $ws12
+bindsym Control+Mod1+3 workspace $ws13
+bindsym Control+Mod1+4 workspace $ws14
+bindsym Control+Mod1+5 workspace $ws15
+bindsym Control+Mod1+6 workspace $ws16
+bindsym Control+Mod1+7 workspace $ws17
+bindsym Control+Mod1+8 workspace $ws18
+bindsym Control+Mod1+9 workspace $ws19
+bindsym Control+Mod1+0 workspace $ws20
+
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1

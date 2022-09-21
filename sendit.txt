@@ -7,11 +7,14 @@ In addition, of a sufficient experience in Linux environments with use of OpenSo
 Expert in:
 1. WebScrape / ETL : scrapy, BeautifulSoup, selenium
 2. Data Analysis / Data Manage: (pandas, numpy, scipy, jupyter-notebook
-3 Data Visualization: matplotlib, hvplot suite (with javascript Chart.JS)
-3. Design and deploy for backend and APIs (google cloud, AWS ): Flask, JWT, Flask-RestFul
-4. GNU-Linux Environments / OpenSource : tools SSH, Docker , scheme cron, bash script
+3. DataBases / Pipelines : postgres, mysql, airflow
+4. Data Visualization: matplotlib, hvplot suite (with javascript Chart.JS)
+5. Design and deploy for backend and APIs (google cloud, AWS ): Flask, Flask-RestFul, FastAPI
+6. GNU-Linux Environments / OpenSource : tools SSH, Docker , scheme cron, bash script
 
-Intermediate use of English, easy to understand in English, Spanish, Portuguese
+Intermediate use of English
+Native Spanish speaker
+Advanced use Portuguese
 
 Projects:
 https://github.com/dopelDev/femi // Data Visualization
