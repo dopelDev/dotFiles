@@ -18,3 +18,6 @@ Plug 'preservim/nerdtree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Barbar
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'

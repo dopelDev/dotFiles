@@ -8,19 +8,6 @@ set autoindent
 set smartindent
 set foldmethod=syntax
 let mapleader = "~"
-"
-"---------- tilix ----------------------- feb 22 -------
-" -- split terminal con tilix --
-"command-complete=shellcmd TermRight :!tilix -a session-add-right -w %:p:h &
-"command-complete=shellcmd TermDown :!tilix -a session-add-down -w %:p:h &
-"nnoremap <silent> xj :TermDown<cr>
-"nnoremap <silent> xl :TermRight<cr>
-"  -- new tab con tilix y new window con tilix --
-"nnoremap xn :!tilix -a app-new-window -w %:p:h<cr>
-"dont work
-"nnoremap xN :!tilix -a add-new-session -w %:p:h<cr>
-"
-"
 "------------------ plugins ----------------------------
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -55,3 +42,5 @@ let g:airline_powerline_fonts = 1
 "
 "--------------------- coc configuration ---------------------"
 source /home/dopel/.config/nvim/cocConfig.vim
+"------------------- barbar configuration --------------------"
+source /home/dopel/.config/nvim/barbarConfig.vim

@@ -127,6 +127,7 @@ bindsym $mod+Control+Down focus output left
 
 #border configuration
 default_border pixel 3
+for_window [class="Alacritty"] border pixel 1
 
 # end block custom keybings
 
@@ -160,22 +161,9 @@ set $ws14 "doc"
 set $ws15 "webDoc"
 set $ws16 "6"
 set $ws17 "spam"
-set $ws18 "8"  
+set $ws18 "git"  
 set $ws19 "calendar"
 set $ws20 "translate"
-
-# switch to workspace custom
-bindsym Control+Mod1+1 workspace $ws11
-bindsym Control+Mod1+2 workspace $ws12
-bindsym Control+Mod1+3 workspace $ws13
-bindsym Control+Mod1+4 workspace $ws14
-bindsym Control+Mod1+5 workspace $ws15
-bindsym Control+Mod1+6 workspace $ws16
-bindsym Control+Mod1+7 workspace $ws17
-bindsym Control+Mod1+8 workspace $ws18
-bindsym Control+Mod1+9 workspace $ws19
-bindsym Control+Mod1+0 workspace $ws20
-
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -188,6 +176,18 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+
+# switch to workspace custom
+bindsym Control+Mod1+1 workspace $ws11
+bindsym Control+Mod1+2 workspace $ws12
+bindsym Control+Mod1+3 workspace $ws13
+bindsym Control+Mod1+4 workspace $ws14
+bindsym Control+Mod1+5 workspace $ws15
+bindsym Control+Mod1+6 workspace $ws16
+bindsym Control+Mod1+7 workspace $ws17
+bindsym Control+Mod1+8 workspace $ws18
+bindsym Control+Mod1+9 workspace $ws19
+bindsym Control+Mod1+0 workspace $ws20
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
