@@ -21,3 +21,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Barbar
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
+" instant markdown
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+" rainbow
+Plug 'frazrepo/vim-rainbow'
+" surround
+Plug 'tpope/vim-surround'

@@ -23,12 +23,12 @@ syntax enable
 "
 "--------------------- mis scripts --------------------
 "             -- abbreviation --
-source /home/dopel/.config/nvim/abbreviation 
+source /home/dopel/.config/nvim/abbreviation.vim 
 "              -- keybinds --
-source /home/dopel/.config/nvim/keybinds
+source /home/dopel/.config/nvim/keybinds.vim
 "
 "--------------------- airline extend -----------------
-let g:airline_theme="angr"
+let g:airline_theme="ouo"
 let g:airline_extensions = ['quickfix', 'wordcount', 'term', 'branch', 'fugitiveline', 'tmuxline', 'tabline']
 function! AirlineInit()
 	let g:airline_section_b = airline#section#create(['branch'])
