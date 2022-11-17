@@ -113,6 +113,9 @@ bindsym $mod+mod1+5 resize set 1920 1080
 # bindsym $mod+mod1+p exec "~/scripts/callfile.sh ~/codeInTest | rofi -dmenu | xargs alacritty --working-directory"
 # bindsym $mod+mod1+o exec "~/scripts/callfile.sh ~/projects | rofi -dmenu | xargs alacritty --working-directory"
 
+# xfce4-screenshot
+bindsym $mod+F5 exec xfce4-screenshooter
+
 # amixer volume change
 bindsym $mod+F10 exec amixer -D pulse sset Master 5%- && pkill -SIGRTMIN+1 i3blocks 
 bindsym $mod+F11 exec amixer -D pulse sset Master 5%+ && pkill -SIGRTMIN+1 i3blocks 
@@ -132,6 +135,8 @@ for_window [class="Alacritty"] border pixel 1
 for_window [class="Brave"] border pixel 1
 for_window [class="Chromium"] border pixel 1
 for_window [class="Librewolf"] border pixel 1
+# add 22-11-17
+for_window [class="Firefox-esr"] border pixel 1
 
 # end block custom keybings
 
