@@ -131,12 +131,12 @@ bindsym $mod+Control+Down focus output left
 
 #border configuration
 default_border pixel 1
-for_window [class="Alacritty"] border pixel 1
-for_window [class="Brave"] border pixel 1
-for_window [class="Chromium"] border pixel 1
-for_window [class="Librewolf"] border pixel 1
+for_window [class="Alacritty"] border pixel 2
+for_window [class="Brave"] border pixel 2
+for_window [class="Chromium"] border pixel 2
+for_window [class="Librewolf"] border pixel 2
 # add 22-11-17
-for_window [class="Firefox-esr"] border pixel 1
+for_window [class="Firefox-esr"] border pixel 2
 
 # end block custom keybings
 
@@ -163,16 +163,16 @@ set $ws9 "9"
 set $ws10 "10"
 
 # workspace custom
-set $ws11 "social"
-set $ws12 "media"
+set $ws11 "Search"
+set $ws12 "Media"
 set $ws13 "SSH"
 set $ws14 "Reading"
-set $ws15 "Search"
-set $ws16 "Steam"
-set $ws17 "spam"
-set $ws18 "git"  
-set $ws19 "calendar"
-set $ws20 "translate"
+set $ws15 "Writing"
+set $ws16 "Dev"
+set $ws17 "Deployment"
+set $ws18 "Steam/Games"  
+set $ws19 "Calendar"
+set $ws20 "Social"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
