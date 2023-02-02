@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Hurmit Nerd Font 14
+font pango:Hurmit Nerd Font 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -41,7 +41,7 @@ exec --no-startup-id nm-applet
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec /home/dopel/.cargo/bin/alacritty
+bindsym $mod+Return exec /usr/bin/alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -129,14 +129,12 @@ bindsym $mod+Control+Right move workspace to output right
 bindsym $mod+Control+Up focus output right
 bindsym $mod+Control+Down focus output left
 
-#border configuration
+#border configuration 2023 Tuesday 17 January
 default_border pixel 1
-for_window [class="Alacritty"] border pixel 2
-for_window [class="Brave"] border pixel 2
-for_window [class="Chromium"] border pixel 2
-for_window [class="Librewolf"] border pixel 2
-# add 22-11-17
-for_window [class="Firefox-esr"] border pixel 2
+# for_window [class="Alacritty"] border pixel 0
+# for_window [class="Brave"] border pixel 0
+# for_window [class="Chromium"] border pixel 0
+# for_window [class="Librewolf"] border pixel 0
 
 # end block custom keybings
 
@@ -163,15 +161,15 @@ set $ws9 "9"
 set $ws10 "10"
 
 # workspace custom
-set $ws11 "Search"
+set $ws11 "Dev"
 set $ws12 "Media"
-set $ws13 "SSH"
-set $ws14 "Reading"
-set $ws15 "Writing"
-set $ws16 "Dev"
-set $ws17 "Misc"
+set $ws13 "Search"
+set $ws14 "WebService"
+set $ws15 "Doc"
+set $ws16 "SSH"
+set $ws17 "Git"
 set $ws18 "Steam/Games"  
-set $ws19 "Calendar"
+set $ws19 "ToDo"
 set $ws20 "Social"
 
 # switch to workspace
@@ -260,7 +258,7 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-				status_command i3blocks
-}
-exec_always --no-startup-id $HOME/.config/i3/autorun.sh
+# barbar {
+#				# status_command i3blocks
+#}
+exec_always --no-startup-id $HOME/.config/i3/autorun.sh &
