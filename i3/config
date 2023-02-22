@@ -104,10 +104,11 @@ bindsym $mod+space focus mode_toggle
 # resize
 bindsym $mod+mod1+0 resize set 256 144 
 bindsym $mod+mod1+9 resize set 426 240
-bindsym $mod+mod1+8 resize set 480 360 
-bindsym $mod+mod1+7 resize set 640 480 
+bindsym $mod+mod1+8 resize set 640 360 
+bindsym $mod+mod1+7 resize set 960 540
 bindsym $mod+mod1+6 resize set 1200 720
-bindsym $mod+mod1+5 resize set 1920 1080
+bindsym $mod+mod1+5 resize set 1600 920
+bindsym $mod+mod1+4 resize set 1920 1080
 
 # rofi for file
 # bindsym $mod+mod1+p exec "~/scripts/callfile.sh ~/codeInTest | rofi -dmenu | xargs alacritty --working-directory"
