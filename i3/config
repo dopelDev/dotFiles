@@ -123,15 +123,19 @@ bindsym $mod+F11 exec amixer -D pulse sset Master 5%+ && pkill -SIGRTMIN+1 i3blo
 bindsym $mod+F9 exec amixer -D pulse sset Master 0% && pkill -SIGRTMIN+1 i3blocks
 
 # move workspaces
-bindsym $mod+Control+Left move workspace to output left
-bindsym $mod+Control+Right move workspace to output right
+bindsym $mod+Control+h move workspace to output left
+bindsym $mod+Control+l move workspace to output right
+bindsym $mod+Control+k move workspace to output up
+bindsym $mod+Control+j move workspace to output down
 
 # move between screens
-bindsym $mod+Control+Up focus output right
-bindsym $mod+Control+Down focus output left
+bindsym $mod+Control+Right focus output right
+bindsym $mod+Control+Left focus output left
+bindsym $mod+Control+Down focus output down
+bindsym $mod+Control+Up focus output up
 
 #border configuration 2023 Tuesday 17 January
-default_border pixel 1
+default_border pixel 4
 # for_window [class="Alacritty"] border pixel 0
 # for_window [class="Brave"] border pixel 0
 # for_window [class="Chromium"] border pixel 0
@@ -168,7 +172,7 @@ set $ws13 "Search"
 set $ws14 "WebService"
 set $ws15 "Doc"
 set $ws16 "SSH"
-set $ws17 "Git"
+set $ws17 "mpv"
 set $ws18 "Steam/Games"  
 set $ws19 "ToDo"
 set $ws20 "Social"
