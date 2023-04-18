@@ -168,7 +168,7 @@ set $ws10 "10"
 # workspace custom
 set $ws11 "Dev"
 set $ws12 "Media"
-set $ws13 "Search"
+set $ws13 "Chatgpt"
 set $ws14 "WebService"
 set $ws15 "Doc"
 set $ws16 "SSH"
@@ -267,3 +267,6 @@ bindsym $mod+r mode "resize"
 #				# status_command i3blocks
 #}
 exec_always --no-startup-id $HOME/.config/i3/autorun.sh &
+exec --no-startup-id i3-msg "workspace set; exec gnome-control-center" &
+exec --no-startup-id i3-msg "workspace set; exec pavucontrol" &
+

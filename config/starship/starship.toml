@@ -16,28 +16,28 @@ truncation_symbol = ""
 
 [git_commit]
 commit_hash_length = 4
-tag_symbol = "🔖 "
+tag_symbol = " commit"
 
 [git_state]
 format = '[\($state( $progress_current of $progress_total)\)]($style) '
-cherry_pick = "[🍒 PICKING](bold red)"
+cherry_pick = "[ PICKING](bold red)"
 
 [git_metrics]
 added_style = "bold blue"
 format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 
 [git_status]
-conflicted = "🏳"
-ahead = "🏎💨"
-behind = "😰"
-diverged = "😵"
-up_to_date = "[✓](bold green)"
-untracked = "🤷‍"
-stashed = "📦"
-modified = "📝"
+ahead = "↑"
+behind = "↓"
+conflicted = "✖ "
+deleted = "✘"
+modified = "✹ "
+renamed = "➜ "
+untracked = "★ "
+diverged = "⇵ "
+up_to_date = '[󰒍 ](bold green)'
+stashed = "☰ "
 staged = '[++\($count\)](green)'
-renamed = "👅"
-deleted = "🗑"
 
 [directory]
 truncate_to_repo = false
@@ -63,7 +63,7 @@ python_binary = ["./venv/bin/python", "python", "python3", "python2"]
 
 [time]
 disabled = false
-format = '🕜[\[ $time \]]($style) '
+format = '󱑇 [\[ $time \]](bold blue) '
 time_format = "%T"
 utc_time_offset = "-5"
 time_range = "-"

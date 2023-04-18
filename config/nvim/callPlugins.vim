@@ -27,3 +27,13 @@ Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn in
 Plug 'frazrepo/vim-rainbow'
 " surround
 Plug 'tpope/vim-surround'
+" vim-autoformat
+Plug 'vim-autoformat/vim-autoformat'
+" tagbar
+Plug 'majutsushi/tagbar'
+" Telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+" vimspector
+Plug 'puremourning/vimspector'
