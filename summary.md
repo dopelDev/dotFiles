@@ -37,7 +37,6 @@ By harmoniously integrating these technologies, I am able to deliver robust and 
 
 ## Front-End
 - HTML/CSS/JavaScript: Solid understanding of these fundamental front-end technologies for creating interactive web pages.
-- Bootstrap: Experienced in using Bootstrap framework to design responsive and intuitive user interfaces.
 - Bulma: is a modern, responsive CSS framework. It's highly customizable, with a clean syntax, facilitating efficient web design across all devices.
 
 ## Languages
